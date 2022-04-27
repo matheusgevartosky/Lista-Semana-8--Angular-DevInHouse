@@ -1,0 +1,11 @@
+<div class="container">
+  <h3>[M1S08] Ex 2 - Obter texto digitado em input de busca</h3>
+
+  <form>
+    <input type="text" [(ngModel)]='entrada'
+    name = 'name'
+    placheholder = 'digite o nome'
+    >
+  </form>
+  <span *ngIf="entrada != '' ">Texto digitado: {{ entrada}} </span>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+  <h3>{{'[M1S08] Ex 3 - Interação e cálculo com múltiplos inputs' | titlecase}}</h3>
+  <Form>
+    <input type='text' [(ngModel)]="value1" placeholder="Digite o promeiro valor">
+    <input type='text' [(ngModel)]="value2" placeholder="Digite o promeiro valor">
+  </Form>
+  <div class="resultContainer">
+    <span>Escolha uma operação:</span>
+    <div>
+      <button>Somar</button>
+      <button>Subtrair</button>
+      <button>Multipiclar</button>
+      <button>Dividir</button>
+    </div>
+    <span *ngIf="result != null">{{result}}</span>
+  </div>
+</div>

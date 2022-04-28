@@ -8,6 +8,7 @@ import { HomePageComponent } from './views/home-page/home-page.component';
 import { EXE1Component } from './Components/exe1/exe1.component';
 import { Exercicio2Component } from './Components/exercicio2/exercicio2.component';
 import { Exercicio3Component } from './Components/exercicio3/exercicio3.component';
+import { Exercicio4Component } from './Components/exercicio4/exercicio4.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { Exercicio3Component } from './Components/exercicio3/exercicio3.componen
     HomePageComponent,
     EXE1Component,
     Exercicio2Component,
-    Exercicio3Component
+    Exercicio3Component,
+    Exercicio4Component
   ],
   imports: [
     BrowserModule,

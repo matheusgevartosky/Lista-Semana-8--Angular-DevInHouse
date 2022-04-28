@@ -4,6 +4,7 @@ import { EXE1Component } from './Components/exe1/exe1.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { Exercicio4Component } from './Components/exercicio4/exercicio4.component';
 
 const routes: Routes = [
 
@@ -15,7 +16,11 @@ const routes: Routes = [
   },
   {
     path: 'exercicio3', component: Exercicio3Component
+  },
+  {
+    path: 'exercicio4', component: Exercicio4Component
   }
+
 ];
 
 @NgModule({

@@ -9,17 +9,17 @@ import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms'
 export class Exercicio4Component {
 
   form: FormGroup = this.fb.group({
-    nome: ['',[Validators.required, Validators.minLength(3) ]],
-    email: [''],
-    nomeFilme: [''],
-    avaliacao: [null],
+    nome!: ['',[Validators.required, Validators.minLength(3) ]],
+    email!: ['' ,[Validators.email]],
+    nomeFilme: ['', [Validators.required, Validators.minLength(3) ]],
+    avaliacao: [null , [Validators.required]],
   });
 
   constructor(private fb: FormBuilder) { }
 
   submit(){
 
-    console.log(this.form.value)
+    alert(`Você avaliou o filme ${this.form.value.nomeFilme}` )
   }
 
 }

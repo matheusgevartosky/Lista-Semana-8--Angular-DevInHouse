@@ -9,7 +9,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class Exercicio5Component implements OnInit {
 
-  getResp?:any;
+  getResp:any;
+  carregado = 0
+
 
   constructor(private _http : ConsomeApiService ) { }
 
@@ -19,8 +21,9 @@ export class Exercicio5Component implements OnInit {
   }
 
   async getData(){
-    this.getResp = await this._http.getRequest(430);
+    this.getResp = await this._http.getRequest(70);
     console.log(this.getResp)
+    this.carregado = 1;
   }
 
 }

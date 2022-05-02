@@ -1,0 +1,13 @@
+<div class="container">
+  <h3 *ngIf="loading == true">Consultando lista de filmes...</h3>
+  <div class="content">
+    <h3>{{ popularMovie?.original_title }}</h3>
+    <p>{{ popularMovie?.overview}}</p>
+    <span>Average:  {{ popularMovie?.vote_average}}</span><br>
+    <span>Votes: {{ popularMovie?.vote_count}}</span>
+  </div>
+  <div>
+    <img [src]="'https://image.tmdb.org/t/p/w500/'+ popularMovie?.poster_path">
+  </div>
+</div>
+

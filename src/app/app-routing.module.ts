@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { Exercicio4Component } from './Components/exercicio4/exercicio4.component';
 import { Exercicio5Component } from './Components/exercicio5/exercicio5.component';
 import { Exercicio9Component } from './Components/exercicio9/exercicio9.component';
+import { Exercicio10Component } from './Components/exercicio10/exercicio10.component';
 
 const routes: Routes = [
 
@@ -27,7 +28,11 @@ const routes: Routes = [
   },
   {
     path: 'exercicio9', component: Exercicio9Component
+  },
+  {
+    path: 'exercicio10', component: Exercicio10Component
   }
+
 
 
 ];

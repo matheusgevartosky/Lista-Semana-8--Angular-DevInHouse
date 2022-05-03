@@ -20,7 +20,7 @@ export class Exercicio9Component implements OnInit {
   async getPopular(){
     const data = await this.getMovies.popularMovies();
     console.log(data.results[1])
-    this.popularMovie = data.results[2]
+    this.popularMovie = data.results[6]
     this.loading = false
   }
 

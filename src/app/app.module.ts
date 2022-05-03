@@ -13,6 +13,7 @@ import { Exercicio4Component } from './Components/exercicio4/exercicio4.componen
 import { Exercicio5Component } from './Components/exercicio5/exercicio5.component';
 import { ConsomeApiService } from './services/consome-api.service';
 import { Exercicio9Component } from './Components/exercicio9/exercicio9.component';
+import { Exercicio10Component } from './Components/exercicio10/exercicio10.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { Exercicio9Component } from './Components/exercicio9/exercicio9.componen
     Exercicio4Component,
     Exercicio5Component,
     Exercicio9Component,
+    Exercicio10Component,
 
   ],
   imports: [
